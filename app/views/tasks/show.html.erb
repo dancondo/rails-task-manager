@@ -1,0 +1,10 @@
+<h1><%= @task.title %></h1>
+<p><%= @task.details %></p>
+<% if @task.completed %>
+    <p><i class='far fa-check-square'></i> This task is completed</p>
+  <% else %>
+    <p><i class='far fa-square'></i> This task is not completed yet</p>
+<% end %>
+<a href=<%= "/tasks/#{@task.id}/edit" %>>Edit this task</a>
+<a href="/tasks"><i class="fas fa-undo"></i> Back to list</a>
+<form action="tasks/dekete" method="post"></form>

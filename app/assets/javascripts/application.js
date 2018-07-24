@@ -14,3 +14,26 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+
+// document.addEventListener("turbolinks:load", () => {
+//   listeners();
+// });
+
+//  const listeners = () => {
+
+//   const btns = document.querySelectorAll('.delete-btn');
+
+//   const confirmation = (event) => {
+
+//     if (confirm(`Do you want to delete this task?`)){
+//       return
+//     } else {
+//       event.preventDefault();
+//     }
+//   }
+
+//   btns.forEach ((btn) => {
+//     btn.addEventListener('click', confirmation);
+//   });
+//  }
+
